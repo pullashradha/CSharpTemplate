@@ -10,12 +10,18 @@ Longer succinct description of program.
 
 ## Setup/Installation Requirements
 
-This program can only be accessed on a PC with Windows 10, and with git and atom installed.
+This program can only be accessed on a PC with Windows 10, and with Git, Atom, and Sql Server Management Studio (SSMS) installed.
 
 * Clone this repository
-* Type following command into the Windows PowerShell > dnu restore
-* Type following command into PowerShell > dnx kestrel
-* Open Chrome and type in the following address: "localhost:5004"
+* Import the database and test database:
+  * Open SSMS
+  * Select the following buttons from the top nav bar to open the database scripts file: File>Open>File>"Desktop\RepositoryName\Sql Databases\database_name.sql"
+  * Save the database_name.sql file
+  * To create the database: click the "!Execute" button on the top nav bar
+  * Repeat the above steps to import the test database
+* View the web page:
+  * Type following command into PowerShell > dnx kestrel
+  * Open Chrome and type in the following address: localhost:5004
 
 ## Known Bugs
 
