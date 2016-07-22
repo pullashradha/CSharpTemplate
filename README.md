@@ -25,10 +25,28 @@ This program can only be accessed on a PC with Windows 10, and with Git, Atom, a
   * Repeat the above steps to import the test database
 * Test the program:
   * Type following command into PowerShell > dnx test
-  * All tests should be passing, if not run dnx test again
+  * All tests should be passing, if not run dnx test again. Otherwise fix the errors before launching the program on the browser
 * View the web page:
   * Type following command into PowerShell > dnx kestrel
   * Open Chrome and type in the following address: localhost:5004
+
+## Database Creation Instructions
+
+To build the databases from scratch, type the commands below in the Windows PowerShell:
+  * Desktop> SQLCMD -S "Server-Name";
+    * 1> CREATE DATABASE database_name;
+    * 2> GO
+  * Exit out of SQLCMD by typing> QUIT
+  * Open SSMS, click open Databases folder and check that the database_name database has been created
+  * Click "New Query" button on top nav bar (above "!Execute")
+  * Type following command into query text space to backup database: BACKUP DATABASE database_name TO DISK = 'C:\Users\[Account-Name]\database_name.bak'
+  * Click "!Execute"
+  * Right click database_name in the Databases folder: Tasks>Restore>Database
+  * Confirm that there is a database to restore in the "Backup sets to restore" option field
+  * Under the "Destination" input form, change the database name to: "database_name_test"
+  * Click "OK", refresh SSMS, and view the new test database in the Database folder
+
+If SQL is not connected in the PowerShell, open SSMS and click the "New Query" button (in nav bar above "!Execute"). Type commands shown above into the text space, starting from "CREATE DATABASE...".
 
 ## Known Bugs
 
