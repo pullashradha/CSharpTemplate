@@ -38,13 +38,13 @@ No known bugs.
 
 The program should ... | Example Input | Example Output
 ----- | ----- | -----
-Spec 1 | Example Input: | Example Output:
+--- | --- | ---
 
 ## Future Features
 
 HTML | CSS | C#
 ----- | ----- | -----
------ | ----- | -----
+--- | --- | ---
 
 ## Support and Contact Details
 
