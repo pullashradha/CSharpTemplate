@@ -24,8 +24,9 @@ This program can only be accessed on a PC with Windows 10, and with Git, Atom, a
   * Refresh SSMS
   * Repeat the above steps to import the test database
 * Test the program:
-  * Type following command into PowerShell > dnx test
-  * All tests should be passing, if not run dnx test again. Otherwise fix the errors before launching the program on the browser
+  * Type the following command into PowerShell > dnu restore
+  * Next type > dnx test
+  * All tests should be passing, if not run dnx test again. Otherwise, fix the errors before launching the program on the browser.
 * View the web page:
   * Type following command into PowerShell > dnx kestrel
   * Open Chrome and type in the following address: localhost:5004
