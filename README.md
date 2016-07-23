@@ -37,6 +37,8 @@ To build the databases from scratch, type the commands below in the Windows Powe
   * Desktop> SQLCMD -S "Server-Name";
     * 1> CREATE DATABASE database_name;
     * 2> GO
+    * 3> USE database_name;
+    * 4> GO
   * Exit out of SQLCMD by typing> QUIT
   * Open SSMS, click open Databases folder and check that the database_name database has been created
   * Click "New Query" button on top nav bar (above "!Execute")
