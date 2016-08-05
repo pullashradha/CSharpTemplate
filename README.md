@@ -35,12 +35,10 @@ This program can only be accessed on a PC with Windows 10, and with Git, Atom, a
 
 To build the databases from scratch, type the commands below in the Windows PowerShell:
   * Desktop> SQLCMD -S "Server-Name";
-    ```
-    1> CREATE DATABASE database_name;
-    GO
-    USE database_name;
-    GO
-    ```
+    * 1> CREATE DATABASE database_name;
+    * GO
+    * USE database_name;
+    * GO
   * Exit out of SQLCMD by typing> QUIT
   * Open SSMS, click open Databases folder and check that the database_name database has been created
   * Click "New Query" button on top nav bar (above "!Execute")
