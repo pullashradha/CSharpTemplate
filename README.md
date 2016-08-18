@@ -57,7 +57,7 @@ No known bugs.
 
 ## Specifications
 
-The program should ... | Example Input | Example Output
+The program should... | Example Input | Example Output
 ----- | ----- | -----
 --- | --- | ---
 
