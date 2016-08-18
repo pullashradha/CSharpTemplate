@@ -1,4 +1,4 @@
-# (Project Name) Webpage
+# (Project Name)
 
 #### (Week Name) Independent Project for Epicodus, 00/00/2016
 
